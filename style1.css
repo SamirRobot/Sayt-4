@@ -1,0 +1,567 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap");
+
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Playfair Display", serif;
+}
+.container {
+  position: relative;
+  width: 100%;
+  height: 325vh;
+  background-color: black;
+}
+.container::after {
+  content: " ";
+  position: absolute;
+  top: 520px;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, black, transparent);
+  z-index: 10000;
+}
+.container img {
+  top: 0px;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  transform: scale(-1, 1);
+}
+.header {
+  top: 0px;
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  background-color: rgb(7, 37, 126);
+  clip-path: polygon(0 0, 100% 0, 100% 15%, 10% 15%);
+}
+.header ul li {
+  z-index: 1;
+  top: -4px;
+  position: relative;
+  float: left;
+  left: 460px;
+  list-style-type: none;
+}
+.header ul li a {
+  text-shadow: 2px 2px 2px black, 2px 2px 1px black;
+  color: white;
+  text-decoration: none;
+  margin-left: 60px;
+  transition: 0.2s;
+}
+.header ul li a:hover {
+  color: yellow;
+  transition: 0.2s;
+}
+.piramid {
+  top: 45px;
+  left: 145px;
+  position: absolute;
+  width: 75%;
+  height: 100px;
+  background-color: black;
+  clip-path: polygon(0 0, 100% 0, 82% 47%, 48% 100%, 15% 47%);
+}
+.piramid img {
+  border-radius: 30%;
+  height: 20px;
+  width: 20px;
+  top: 27px;
+  margin-right: 5px;
+  left: 490px;
+  transform: scale(1, 1);
+  transition: 0.5s;
+  cursor: pointer;
+}
+.piramid img:hover {
+  transition: 0.5s;
+  box-shadow: 0px 0px 2px 2px white;
+}
+.piramid p {
+  text-shadow: 2px 2px 2px blue, 2px 2px 1px blue;
+  position: absolute;
+  top: 10px;
+  left: 350px;
+  color: white;
+}
+.box {
+  top: -50px;
+  left: 140px;
+  position: absolute;
+  width: 200px;
+  height: 275px;
+  border-left: 5px solid black;
+  border-bottom: 5px solid black;
+  background-color: rgb(28, 28, 216);
+  transform: skew(0deg, -20deg);
+  box-shadow: 0px 0px 5px 5px blue;
+}
+.box img {
+  top: 0px;
+  left: -10px;
+  width: 230px;
+  height: 230px;
+  transform: skew(0deg, 20deg);
+}
+.box h1 {
+  font-weight: 900;
+  position: absolute;
+  top: 140px;
+  left: 20px;
+  transform: skew(0deg, 20deg);
+  color: white;
+  text-shadow: 2px 2px 2px black, 2px 2px 1px white;
+}
+.box p {
+  background-color: black;
+  position: absolute;
+  top: 188px;
+  left: 23px;
+  color: white;
+  transform: skew(0deg, 20deg);
+  text-shadow: 2px 2px 2px black, 2px 2px 1px blue;
+}
+.menu {
+  left: 135px;
+  top: 270px;
+  position: absolute;
+  width: 400px;
+  height: 150px;
+}
+.menu p {
+  color: rgba(255, 255, 255, 0.466);
+  font-size: 40px;
+  text-shadow: 2px 2px 2px black, 2px 2px 1px black;
+}
+.menu .span {
+  font-weight: 900;
+  color: white;
+  opacity: 1;
+  text-shadow: 2px 2px 2px black, 2px 2px 1px white;
+}
+.center {
+  top: 600px;
+  left: 70px;
+  position: absolute;
+  width: 1200px;
+  height: 300px;
+}
+.qutu img {
+  position: absolute;
+  top: 50px;
+  left: 60px;
+  height: 290px;
+  width: 250px;
+  clip-path: polygon(51% 0, 100% 30%, 100% 70%, 52% 100%, 0% 70%, 0% 30%);
+}
+.center h1 {
+  font-size: 50px;
+  left: 400px;
+  top: 20px;
+  position: absolute;
+  color: aqua;
+  opacity: 0.4;
+  text-shadow: 2px 2px 2px black, 2px 2px 1px blue;
+}
+.center p {
+  position: absolute;
+  top: 110px;
+  left: 400px;
+  width: 800px;
+  color: white;
+  text-shadow: 2px 2px 2px black, 2px 2px 1px blue;
+}
+.center button {
+  position: absolute;
+  left: 400px;
+  top: 250px;
+  font-size: 16px;
+  font-weight: 900;
+  color: white;
+  background-color: blue;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-shadow: 2px 2px 2px black, 2px 2px 1px red;
+}
+.center button:focus {
+  transition: 0.3s;
+  box-shadow: 0px 0px 3px 3px blue;
+}
+.korobka img {
+  position: absolute;
+  top: 850px;
+  left: 700px;
+  z-index: 2;
+}
+.fotter img {
+  position: absolute;
+  width: 100%;
+  height: 700px;
+  top: 1050px;
+  z-index: 1;
+  transform: skew(0deg, 9deg);
+}
+.mmenu {
+  left: 125px;
+  top: 915px;
+  position: absolute;
+  width: 300px;
+  height: 600px;
+  z-index: 3;
+  clip-path: polygon(0 0, 100% 18%, 100% 98%, 0 84%);
+  background-color: black;
+}
+.mmmenu {
+  position: absolute;
+  top: -20px;
+  height: 150px;
+  width: 300px;
+  z-index: 1;
+  background-color: blue;
+  border-left: 3px solid white;
+}
+.mmenu h1 {
+  text-align: center;
+  position: relative;
+  height: 70px;
+  top: 85px;
+  left: -30px;
+  color: white;
+  z-index: 2;
+  text-shadow: 2px 2px 2px black, 2px 2px 1px white;
+}
+.mmenu ol {
+  font-size: 18px;
+  position: relative;
+  top: 145px;
+  left: 0px;
+  color: white;
+}
+.mmenu ol li {
+  font-weight: 100;
+  text-shadow: 2px 2px 2px black, 2px 2px 1px blue;
+}
+.foot {
+  position: absolute;
+  height: 150px;
+  width: 300px;
+  top: 460px;
+  background-color: blue;
+  z-index: -1;
+  border-left: 3px solid white;
+}
+.foot .h2 {
+  text-align: right;
+  position: relative;
+  top: -15px;
+  left: -80px;
+  color: white;
+  z-index: 2;
+  text-shadow: 2px 2px 2px black, 2px 2px 1px white;
+}
+.mmenu .imga {
+  z-index: 10;
+  position: absolute;
+  top: 465px;
+  left: 240px;
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+}
+.mmenu img {
+  cursor: pointer;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+}
+.mmenu .imga:hover {
+  box-shadow: 0px 0px 2px 2px white;
+}
+.abzas {
+  top: 1200px;
+  left: 450px;
+  width: 820px;
+  height: 480px;
+  position: absolute;
+  z-index: 3;
+}
+.abzas h1 {
+  top: -20px;
+  font-size: 45px;
+  font-weight: 900;
+  color: white;
+  text-shadow: 2px 2px 2px black, 2px 2px 1px blue;
+}
+.abzas span {
+  font-size: 35px;
+  font-weight: 100;
+  color: white;
+}
+.abzas p {
+  color: white;
+  background-color: black;
+}
+.down {
+  position: relative;
+  top: -30px;
+  width: 150px;
+  left: 95px;
+  height: 150px;
+  cursor: pointer;
+  clip-path: polygon(50% 0, 100% 30%, 100% 70%, 50% 100%, 0% 70%, 0% 30%);
+}
+.down img {
+  top: 0px;
+  width: 150px;
+  height: 150px;
+  clip-path: polygon(50% 0, 100% 30%, 100% 70%, 50% 100%, 0% 70%, 0% 30%);
+}
+.fon {
+  background-color: black;
+  clip-path: polygon(100% 0, 0 0, 49% 27%);
+  position: absolute;
+  padding: 10px;
+  width: 132px;
+  height: 150px;
+  top: 104.5px;
+  left: -1px;
+  opacity: 0.7;
+}
+.fon p {
+  left: 45px;
+  top: -15px;
+  position: absolute;
+  text-align: center;
+  font-size: 12px;
+  color: white;
+  text-shadow: 2px 2px 2px black, 2px 2px 1px blue;
+}
+.down1 {
+  position: absolute;
+  top: 150px;
+  left: 250px;
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+  clip-path: polygon(50% 0, 100% 30%, 100% 70%, 50% 100%, 0% 70%, 0% 30%);
+}
+.down1 img {
+  top: 0px;
+  width: 150px;
+  height: 150px;
+  clip-path: polygon(50% 0, 100% 30%, 100% 70%, 50% 100%, 0% 70%, 0% 30%);
+}
+.fon1 {
+  background-color: black;
+  clip-path: polygon(100% 0, 0 0, 49% 27%);
+  position: absolute;
+  padding: 10px;
+  width: 132px;
+  height: 150px;
+  top: 104.5px;
+  left: -1px;
+  opacity: 0.7;
+}
+.fon1 p {
+  left: 45px;
+  top: -15px;
+  position: absolute;
+  text-align: center;
+  font-size: 12px;
+  color: white;
+  text-shadow: 2px 2px 2px black, 2px 2px 1px blue;
+}
+.down2 {
+  position: absolute;
+  top: 150px;
+  left: 405px;
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+  clip-path: polygon(50% 0, 100% 30%, 100% 70%, 50% 100%, 0% 70%, 0% 30%);
+}
+.down2 img {
+  top: 0px;
+  width: 150px;
+  height: 150px;
+  clip-path: polygon(50% 0, 100% 30%, 100% 70%, 50% 100%, 0% 70%, 0% 30%);
+}
+.fon2 {
+  background-color: black;
+  clip-path: polygon(100% 0, 0 0, 49% 27%);
+  position: absolute;
+  padding: 10px;
+  width: 132px;
+  height: 150px;
+  top: 104.5px;
+  left: -1px;
+  opacity: 0.7;
+}
+.fon2 p {
+  left: 45px;
+  top: -15px;
+  position: absolute;
+  text-align: center;
+  font-size: 12px;
+  color: white;
+  text-shadow: 2px 2px 2px black, 2px 2px 1px blue;
+}
+.down3 {
+  position: absolute;
+  top: 260px;
+  left: 173px;
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+  clip-path: polygon(50% 0, 100% 30%, 100% 70%, 50% 100%, 0% 70%, 0% 30%);
+}
+.down3 img {
+  top: 0px;
+  width: 150px;
+  height: 150px;
+  clip-path: polygon(50% 0, 100% 30%, 100% 70%, 50% 100%, 0% 70%, 0% 30%);
+}
+.fon3 {
+  background-color: black;
+  clip-path: polygon(100% 0, 0 0, 49% 27%);
+  position: absolute;
+  padding: 10px;
+  width: 132px;
+  height: 150px;
+  top: 104.5px;
+  left: -1px;
+  opacity: 0.7;
+}
+.fon3 p {
+  left: 47px;
+  top: -15px;
+  position: absolute;
+  text-align: center;
+  font-size: 12px;
+  color: white;
+  text-shadow: 2px 2px 2px black, 2px 2px 1px blue;
+}
+.down4 {
+  position: absolute;
+  top: 260px;
+  left: 328px;
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+  clip-path: polygon(50% 0, 100% 30%, 100% 70%, 50% 100%, 0% 70%, 0% 30%);
+}
+.down4 img {
+  top: 0px;
+  width: 150px;
+  height: 150px;
+  clip-path: polygon(50% 0, 100% 30%, 100% 70%, 50% 100%, 0% 70%, 0% 30%);
+}
+.fon4 {
+  background-color: black;
+  clip-path: polygon(100% 0, 0 0, 49% 27%);
+  position: absolute;
+  padding: 10px;
+  width: 132px;
+  height: 150px;
+  top: 104.5px;
+  left: -1px;
+  opacity: 0.7;
+}
+.fon4 p {
+  left: 47px;
+  top: -15px;
+  position: absolute;
+  text-align: center;
+  font-size: 12px;
+  color: white;
+  text-shadow: 2px 2px 2px black, 2px 2px 1px blue;
+}
+.fdown {
+  position: absolute;
+  top: 390px;
+  left: -400px;
+  width: 1250px;
+  height: 300px;
+}
+.fdown h1 {
+  left: 20px;
+  top: 70px;
+  position: absolute;
+  color: blue;
+  font-weight: 100;
+  text-shadow: 2px 2px 2px black, 2px 2px 1px red;
+}
+.fdown i {
+  top: 170px;
+  left: 10px;
+  font-weight: 100;
+  position: absolute;
+  width: 600px;
+  height: 200px;
+  color: white;
+}
+.fdown h2 {
+  left: 23px;
+  color: blue;
+  text-shadow: 2px 2px 2px black, 2px 2px 1px red;
+  position: absolute;
+  top: 240px;
+  font-weight: 100;
+}
+.fdown button {
+  position: absolute;
+  border-radius: 5px;
+  width: 100px;
+  height: 30px;
+  top: 260px;
+  left: 440px;
+  color: white;
+  text-shadow: 2px 2px 2px black, 2px 2px 1px red;
+  background-color: blue;
+  outline: none;
+  border: none;
+  font-weight: 700;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.fdown button:focus {
+  transition: 0.3s;
+  box-shadow: 0px 0px 3px 3px blue;
+}
+
+.cfon {
+  border-left: 3px solid white;
+  top: 600px;
+  right: 100px;
+  position: absolute;
+  width: 320px;
+  height: 150px;
+  background-color: blue;
+  clip-path: polygon(0 74%, 100% 14%, 100% 100%, 0% 100%);
+  z-index: 1;
+  border-radius: 3px;
+}
+.cfon1 p {
+  top: 660px;
+  left: 485px;
+  position: absolute;
+  color: white;
+  font-weight: 100;
+  font-size: 35px;
+  background-color: blue;
+  text-shadow: 2px 2px 2px white, 2px 2px 1px red;
+  z-index: 3;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.cfon1 p:hover {
+  transition: 0.2s;
+  color: black;
+  text-shadow: 2px 2px 2px white, 2px 2px 1px black;
+}
